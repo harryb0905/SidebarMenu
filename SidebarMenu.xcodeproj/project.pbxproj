@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CD3C767A1B8A4DB800DE5216 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C76791B8A4DB800DE5216 /* ChecklistViewController.swift */; };
 		CD3C767F1B8A500C00DE5216 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3C767E1B8A500C00DE5216 /* SWRevealViewController.m */; };
+		CD3C76811B8A57B000DE5216 /* DatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C76801B8A57B000DE5216 /* DatesViewController.swift */; };
+		CD3C76831B8A57DC00DE5216 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C76821B8A57DC00DE5216 /* NotesViewController.swift */; };
 		F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47029F51A7F27DB00E30A3C /* AppDelegate.swift */; };
 		F47029FB1A7F27DB00E30A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47029F91A7F27DB00E30A3C /* Main.storyboard */; };
 		F47029FD1A7F27DB00E30A3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47029FC1A7F27DB00E30A3C /* Images.xcassets */; };
@@ -37,6 +39,8 @@
 		CD3C767C1B8A500C00DE5216 /* SidebarMenu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SidebarMenu-Bridging-Header.h"; sourceTree = "<group>"; };
 		CD3C767D1B8A500C00DE5216 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		CD3C767E1B8A500C00DE5216 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		CD3C76801B8A57B000DE5216 /* DatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatesViewController.swift; sourceTree = "<group>"; };
+		CD3C76821B8A57DC00DE5216 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		F47029F01A7F27DB00E30A3C /* SidebarMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidebarMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47029F41A7F27DB00E30A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47029F51A7F27DB00E30A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,7 +119,9 @@
 				F491E7491A7F4B300026528E /* NewsTableViewController.swift */,
 				F491E74B1A7F4C630026528E /* NewsTableViewCell.swift */,
 				F491E7521A7F7DF20026528E /* MapViewController.swift */,
+				CD3C76821B8A57DC00DE5216 /* NotesViewController.swift */,
 				F491E7541A7F7E010026528E /* PhotoViewController.swift */,
+				CD3C76801B8A57B000DE5216 /* DatesViewController.swift */,
 				CD3C76791B8A4DB800DE5216 /* ChecklistViewController.swift */,
 			);
 			path = SidebarMenu;
@@ -196,6 +202,7 @@
 				TargetAttributes = {
 					F47029EF1A7F27DB00E30A3C = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = B2WCG576UV;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
 								enabled = 1;
@@ -254,9 +261,11 @@
 			files = (
 				F4702A181A7F351C00E30A3C /* MenuController.swift in Sources */,
 				CD3C767A1B8A4DB800DE5216 /* ChecklistViewController.swift in Sources */,
+				CD3C76811B8A57B000DE5216 /* DatesViewController.swift in Sources */,
 				F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */,
 				CD3C767F1B8A500C00DE5216 /* SWRevealViewController.m in Sources */,
 				F491E74C1A7F4C630026528E /* NewsTableViewCell.swift in Sources */,
+				CD3C76831B8A57DC00DE5216 /* NotesViewController.swift in Sources */,
 				F491E7531A7F7DF20026528E /* MapViewController.swift in Sources */,
 				F491E74A1A7F4B300026528E /* NewsTableViewController.swift in Sources */,
 				F491E7551A7F7E010026528E /* PhotoViewController.swift in Sources */,
@@ -383,9 +392,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SidebarMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SideBarMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SidebarMenu/SidebarMenu-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -396,9 +409,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SidebarMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SideBarMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SidebarMenu/SidebarMenu-Bridging-Header.h";
 			};
 			name = Release;

@@ -1,5 +1,5 @@
 //
-//  ChecklistViewController.swift
+//  NotesViewController.swift
 //  SidebarMenu
 //
 //  Created by Simon Ng on 2/2/15.
@@ -8,8 +8,7 @@
 
 import UIKit
 
-class ChecklistViewController: UIViewController {
-    
+class NotesViewController: UIViewController {
     
     
     @IBOutlet var menuButton: UIBarButtonItem!

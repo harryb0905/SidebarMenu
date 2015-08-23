@@ -51,32 +51,31 @@ class NewsTableViewController: UITableViewController {
     }
 
     
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! NewsTableViewCell
 
         // Configure the cell...
         if indexPath.row == 0 {
-            cell.postImageView.image = UIImage(named: "watchkit-intro")
-            cell.postTitleLabel.text = "WatchKit Introduction: Building a Simple Guess Game"
-            cell.authorLabel.text = "Simon Ng"
+            cell.postTitleLabel.text = "--Content on the Home Page--"
+            cell.authorLabel.text = "Harry Baines"
             cell.authorImageView.image = UIImage(named: "author")
 
         } else if indexPath.row == 1 {
-            cell.postImageView.image = UIImage(named: "custom-segue-featured-1024")
-            cell.postTitleLabel.text = "Building a Chat App in Swift Using Multipeer Connectivity Framework"
-            cell.authorLabel.text = "Gabriel Theodoropoulos"
+            cell.postTitleLabel.text = "--More Content--"
+            cell.authorLabel.text = "Nathaniel Read"
             cell.authorImageView.image = UIImage(named: "appcoda-300")
             
-        } else {
-            cell.postImageView.image = UIImage(named: "webkit-featured")
+        }  /* else {
             cell.postTitleLabel.text = "A Beginner’s Guide to Animated Custom Segues in iOS 8"
             cell.authorLabel.text = "Gabriel Theodoropoulos"
             cell.authorImageView.image = UIImage(named: "appcoda-300")
             
-        }
+        } */
 
         return cell
-    }
+    } 
+
     
 
     /*
