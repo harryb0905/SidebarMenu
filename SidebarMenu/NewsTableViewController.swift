@@ -64,7 +64,7 @@ class NewsTableViewController: UITableViewController {
         } else if indexPath.row == 1 {
             cell.postTitleLabel.text = "--More Content--"
             cell.authorLabel.text = "Nathaniel Read"
-            cell.authorImageView.image = UIImage(named: "appcoda-300")
+            cell.authorImageView.image = UIImage(named: "author")
             
         }  /* else {
             cell.postTitleLabel.text = "A Beginner’s Guide to Animated Custom Segues in iOS 8"
